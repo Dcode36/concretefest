@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gajraj One', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.logo{
+    font-size: 2rem;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size:1rem;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: .5s;    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px)
+{
+   .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: yellow;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+
+
+    .texts h4 {
+        font-size: 1.5rem !important;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    }
+    
+    
+    .texts p {
+        font-size: 3rem !important;
+        font-weight: 800;
+        letter-spacing: 12px;
+        /* font-family: 'Gajraj One', cursive; */
+        -webkit-text-stroke: 2px yellow;
+        color: transparent;
+        padding: 50px 0;
+        text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    }
+    .heading{
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+    
+    
+}
+
+.home {
+    height: 90vh;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: rgba(128, 128, 128, 0.072);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.873) 0, transparent 60%, rgba(0, 0, 0, 0.853)), url(./assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-bottom: 10px solid rgba(255, 255, 0, 0.842);
+    overflow-x: hidden;
+}
+
+.texts h4 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+
+
+.texts p {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 12px;
+    /* font-family: 'Gajraj One', cursive; */
+    -webkit-text-stroke: 2px yellow;
+    color: transparent;
+    padding: 50px 0;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+
+
+.event{
+    height: 100%;
+    width: 100%;
+    padding: 70px 7vw 0 7vw;
+
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.heading h3{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-family: 'Gajraj One', cursive;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+
+.event-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event-card{
+    height: 580px;
+    width: 350px;
+    position: relative;
+    margin: 10px ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.event-card img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-card h4{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.event-card p{
+    margin: 10px 0 ;
+    padding: 10px 0;
+}
+.event-card a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    color:black;
+    padding: 8px 20px;
+    margin: 10px 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.event-card a:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.registration{
+    height: 100%;
+    width: 100%;
+    padding-top: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.guidlines {
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+    text-align: start;
+  }
+  
+  .guidlines h1 {
+    font-family: abnes;
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+  
+  .accordion {
+   
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.8s;
+    /* color: #FF10F0 !important; */
+    margin: 10px 0;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  
+  
+  .active,
+  .accordion:hover {
+    background-color: black;
+    color: white !important;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    width: 80%;
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    transition: all 1.2s ease-out;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+  
+  }
+  
+  .panel p,
+  li {
+  
+    padding: 6px 0;
+    margin-bottom: 10px;
+  }
+  
+  .panel button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  
+  
+  }
+
+  .panel a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+    color:black;
+    padding: 8px 20px;
+    margin: 10px 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.panel a:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.about{
+    height: 100%;
+    padding-top: 70px;
+}
+
+.about-container{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+
+iframe{
+    height: 50vh;
+    width: 80%;
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+.contact{
+    padding: 2% 10%;
+    color: white;
+}
+
+.contact p{
+    padding: 10px 0;
+}
