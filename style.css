@@ -122,7 +122,7 @@ nav .fa {
     }
     
     .sponcers img{
-        height: 100px;
+        height: 90px;
         width: 100px;
     }
     .data {
@@ -150,7 +150,10 @@ nav .fa {
     overflow-x: hidden;
     position: relative;
 }
+.div{
+    height: 70px !important;
 
+}
 .sponcers{
     position: absolute;
     right: 10px;
@@ -161,7 +164,7 @@ nav .fa {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 2px;
-
+    margin-top: 10px;
     text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 
