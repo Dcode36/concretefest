@@ -185,7 +185,7 @@ nav .fa {
     height: 100%;
     width: 100%;
     padding: 70px 7vw 0 7vw;
-
+    background-color: rgba(128, 128, 128, 0.045);
 }
 
 .heading {
@@ -198,9 +198,8 @@ nav .fa {
     font-size: 4rem;
     letter-spacing: 5px;
     font-weight: 300;
-    font-family: 'Gajraj One', cursive;
-    -webkit-text-stroke: 2px black;
-    color: transparent;
+    font-family: 'Gajraj One';
+    color: red;
 }
 
 .event-container {
@@ -387,6 +386,7 @@ li {
 .about {
     height: 100%;
     padding-top: 70px;
+    background-color: rgba(128, 128, 128, 0.045);
 }
 
 .about-container {
@@ -472,10 +472,15 @@ iframe {
     height: 100px;
     width: 300px;
 }
+.data-img img:nth-child(3){
+    height: 100px !important;
+    width: 300px;
+    margin-top: 20px;
+}
 .data:nth-child(1){
     background: rgba(255, 7, 7, 0.747);
-}
 
+}
 .data:nth-child(2){
     background: rgba(12, 52, 255, 0.583);
 }
