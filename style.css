@@ -125,6 +125,10 @@ nav .fa {
         height: 90px;
         width: 100px;
     }
+    .logos img{
+        height: 90px;
+        width: 100px;
+    }
     .data {
         width: 500px;
     
@@ -159,7 +163,19 @@ nav .fa {
     right: 10px;
     top: 15px;
 }
-
+.sponcers img{ 
+    border-radius: 10px;
+ 
+}
+.logos{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    border-radius: 10px;
+}
+.logos img{
+    border-radius: 10px;
+}
 .texts h4 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -462,20 +478,21 @@ iframe {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.data:nth-child(2){
+    background: rgba(12, 52, 255, 0.583) !important;
+}
 .data-img img {
     height: 400px;
     width: 400px;
 
 }
-
 .data-img img:nth-child(2){
-    height: 100px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+
 }
-.data-img img:nth-child(3){
-    height: 100px !important;
-    width: 300px;
-    margin-top: 20px;
+.aci{
+    background: rgba(12, 52, 255, 0.583) !important;
 }
 .data:nth-child(1){
     background: rgba(255, 7, 7, 0.747);
@@ -483,4 +500,14 @@ iframe {
 }
 .data:nth-child(2){
     background: rgba(12, 52, 255, 0.583);
+}
+
+
+.sgp{
+    margin-top: 30px;
+    height: 350px !important;
+}
+
+.down{
+    margin: 1% !important;
 }
